@@ -54,7 +54,7 @@ class UsersInterface {
         System.out.println("Enter your choice:");
         int choice = sc.nextInt();
 
-        switch (choice) {
+        switch (choice) { // for method overloading of addition method.
             case 1:
                 System.out.println("Enter first integer:");
                 int a1 = sc.nextInt();
@@ -108,7 +108,7 @@ class UsersInterface {
         System.out.println("Enter Denominator:");
         int b = sc.nextInt();
 
-        try {
+        try { // exception handling
             System.out.println("Result : " + calc.division(a, b));
         } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
@@ -159,3 +159,4 @@ public  class CalculatorApp {
         UI.mainMenu();
     }
 }
+
